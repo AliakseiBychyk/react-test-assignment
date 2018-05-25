@@ -1,0 +1,15 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: $content-width;
+  margin: auto;
+}
+
+.header_container__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 0 30px;
+  font-size: $font-size-xl;
+  overflow: hidden;
+}
