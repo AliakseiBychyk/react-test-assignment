@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import EpisodeListItem from '../../components/EpisondListItem/EpisodeListItem';
+import ShowDetails from '../../components/ShowDetails/ShowDetails';
 
 class Show extends Component {
   state = {
@@ -23,17 +25,21 @@ class Show extends Component {
   }
 
   render() {
+    const { episodes, show } = this.state;
+
     return (
       <div className="show_container">
-        {this.state.show.name}
+        <ShowDetails
+          {...show}
+        />
         <ul className="show_container__list">
-          {this.state.episodes.map(episode => (
-            <li key={episode.id}>
-              {episode.name}
-            </li>
+          {episodes.map((episode, i) => (
+            <EpisodeListItem
+              key={episode.id}
+              {...episode}
+            />
           ))}
         </ul>
-
       </div>
     );
   }

@@ -1,0 +1,35 @@
+.episodeListItem_container,
+.episodeListItem_container--head {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  height: 50px;
+  align-items: center;
+}
+
+.episodeListItem_container--head {
+  color: $primary-white;
+  background-color: $primary-green;
+}
+
+.episodeListItem_container__airdate,
+.episodeListItem_container__name,
+.episodeListItem_container__number {
+  cursor: pointer;
+}
+
+.episodeListItem_container__number {
+  width: 40px;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.episodeListItem_container__airdate {
+  width: 140px;
+  align-items: center;
+}
+
+.episodeListItem_container__name {
+  align-items: left;
+  padding: 0 30px;
+}

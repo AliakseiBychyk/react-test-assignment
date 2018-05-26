@@ -30,14 +30,14 @@ body {
   background-color: #3C948B; }
 
 .main_section {
-  padding: 70px 0;
+  padding: 50px 0;
   background-color: #FFF;
   color: #0A0A0A; }
 
 .main_section__content {
   padding-top: 75px;
   margin: auto;
-  width: 960px; }
+  width: 780px; }
 
 .main_footer {
   background-color: #3F3F3F;
@@ -53,22 +53,22 @@ body {
   background-color: #FFF; }
 
 .show_container__list {
-  font-size: 16px; }
-  .show_container__list li {
-    text-align: left;
-    padding-left: 60px; }
+  font-size: 16px;
+  width: 780px;
+  margin: auto;
+  padding: 50px 0 0; }
 
 .header_container {
   display: flex;
   justify-content: space-between;
-  width: 960px;
+  width: 780px;
   margin: auto; }
 
 .header_container__title {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0 0 0 30px;
+  padding: 0;
   font-size: 40px;
   overflow: hidden; }
 
@@ -85,3 +85,55 @@ body {
   padding: 0 0 0 30px;
   font-size: 20px;
   overflow: hidden; }
+
+.episodeListItem_container,
+.episodeListItem_container--head {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  height: 50px;
+  align-items: center; }
+
+.episodeListItem_container--head {
+  color: #FFF;
+  background-color: #3C948B; }
+
+.episodeListItem_container__airdate,
+.episodeListItem_container__name,
+.episodeListItem_container__number {
+  cursor: pointer; }
+
+.episodeListItem_container__number {
+  width: 40px;
+  align-items: center;
+  padding-left: 30px; }
+
+.episodeListItem_container__airdate {
+  width: 140px;
+  align-items: center; }
+
+.episodeListItem_container__name {
+  align-items: left;
+  padding: 0 30px; }
+
+.showDetails_content__name {
+  padding: 50px;
+  font-size: 40px;
+  background-color: #E6E6E6;
+  margin: 0 0 50px; }
+
+.showDetails_content__info {
+  display: flex;
+  justify-content: space-around;
+  align-content: center; }
+
+.showDetails_content__summary {
+  font-size: 20px;
+  padding: 0 70px 0 0;
+  text-align: justify; }
+  .showDetails_content__summary p {
+    margin: auto; }
+
+.showDetails_content__img {
+  width: 25%;
+  height: 25%; }
