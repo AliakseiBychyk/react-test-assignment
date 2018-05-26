@@ -9,7 +9,8 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  height: 100%; }
 
 .main_header,
 .main_section,
@@ -58,6 +59,21 @@ body {
   margin: auto;
   padding: 50px 0 0; }
 
+.episode_container {
+  color: #3F3F3F;
+  font-size: 20px;
+  background-color: #FFF; }
+
+.episode_container__homelink {
+  background-color: #3C948B;
+  width: 200px;
+  margin-bottom: 30px; }
+  .episode_container__homelink a {
+    color: #FFF;
+    text-decoration: blink; }
+    .episode_container__homelink a:focus, .episode_container__homelink a:hover, .episode_container__homelink a:visited, .episode_container__homelink a:link, .episode_container__homelink a:active {
+      text-decoration: blink; }
+
 .header_container {
   display: flex;
   justify-content: space-between;
@@ -98,10 +114,23 @@ body {
   color: #FFF;
   background-color: #3C948B; }
 
-.episodeListItem_container__airdate,
-.episodeListItem_container__name,
-.episodeListItem_container__number {
-  cursor: pointer; }
+.episodeListItem_container__airdate a,
+.episodeListItem_container__name a,
+.episodeListItem_container__number a {
+  color: #0A0A0A;
+  text-decoration: blink; }
+  .episodeListItem_container__airdate a:focus, .episodeListItem_container__airdate a:hover, .episodeListItem_container__airdate a:visited, .episodeListItem_container__airdate a:link, .episodeListItem_container__airdate a:active,
+  .episodeListItem_container__name a:focus,
+  .episodeListItem_container__name a:hover,
+  .episodeListItem_container__name a:visited,
+  .episodeListItem_container__name a:link,
+  .episodeListItem_container__name a:active,
+  .episodeListItem_container__number a:focus,
+  .episodeListItem_container__number a:hover,
+  .episodeListItem_container__number a:visited,
+  .episodeListItem_container__number a:link,
+  .episodeListItem_container__number a:active {
+    text-decoration: blink; }
 
 .episodeListItem_container__number {
   width: 40px;

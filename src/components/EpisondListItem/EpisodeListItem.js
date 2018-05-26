@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 const EpisodeListItem = ({
-  number, name, airdate, season,
+  id, number, name, airdate, season,
 }) => {
   const style = number % 2 === 0 ? {} : { backgroundColor: '#E6E6E6' };
 
@@ -22,15 +23,17 @@ const EpisodeListItem = ({
           </li>
         </Fragment>}
       <li className="episodeListItem_container" style={style}>
+
         <div className="episodeListItem_container__number">
-          {number}
+          <Link to={`/${id}`}>{number}</Link>
         </div>
         <div className="episodeListItem_container__airdate">
-          {airdateFormatted}
+          <Link to={`/${id}`}>{airdateFormatted}</Link>
         </div>
         <div className="episodeListItem_container__name">
-          {name}
+          <Link to={`/${id}`}>{name}</Link>
         </div>
+
       </li>
     </Fragment>
   );

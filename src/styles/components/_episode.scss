@@ -1,0 +1,23 @@
+.episode_container {
+  color: $primary-dark;
+  font-size: $font-size-s;
+  background-color: $primary-white;
+}
+
+.episode_container__homelink {
+  background-color: $primary-green; 
+  width: 200px;
+  margin-bottom: 30px;
+  a {
+    color: $primary-white;
+    text-decoration: blink;  
+  
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: blink;
+    }
+  }
+}

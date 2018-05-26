@@ -15,7 +15,19 @@
 .episodeListItem_container__airdate,
 .episodeListItem_container__name,
 .episodeListItem_container__number {
-  cursor: pointer;
+
+  a {
+    color: $primary-black;
+    text-decoration: blink;
+    
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: blink;
+    }
+  }
 }
 
 .episodeListItem_container__number {
