@@ -1,6 +1,8 @@
 {
   "name": "test_assignment_rtl_react",
   "version": "0.1.0",
+  "author": "Aliaksei Bychyk",
+  "homepage": "https:/aliakseibychyk.github.io/react-test-assignment",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -9,13 +11,16 @@
     "eject": "react-scripts eject",
     "sass:watch": "node-sass src/styles/styles.scss src/styles/styles.css -w",
     "sass:build": "node-sass --output-style compressed src/styles/styles.scss > src/styles/styles.css",
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ./**/*.js",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
+    "gh-pages": "^1.1.0",
     "moment": "^2.22.1",
     "node-sass": "^4.9.0",
     "react": "^16.4.0",
