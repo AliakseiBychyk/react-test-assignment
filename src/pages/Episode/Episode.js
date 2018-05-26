@@ -8,7 +8,7 @@ class Episode extends Component {
   }
 
   componentDidMount() {
-    const url = 'http://api.tvmaze.com/shows/6771/episodes';
+    const url = 'https://api.tvmaze.com/shows/6771/episodes';
 
     fetch(url, {
       method: 'GET',
