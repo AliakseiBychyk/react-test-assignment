@@ -4,6 +4,8 @@
   "author": "Aliaksei Bychyk",
   "homepage": "https:/aliakseibychyk.github.io/react-test-assignment",
   "private": true,
+  "author": "Aliaksei Bychyk",
+  "homepage": "https://aliakseibychyk.github.io/react-test-assignment",
   "scripts": {
     "start": "react-scripts start",
     "build": "yarn sass:build && react-scripts build",
@@ -28,5 +30,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "sass": "^1.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
