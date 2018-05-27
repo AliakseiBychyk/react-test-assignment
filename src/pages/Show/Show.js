@@ -9,7 +9,7 @@ class Show extends Component {
   }
 
   componentDidMount() {
-    const url1 = 'http://api.tvmaze.com/shows/6771';
+    const url1 = 'https://api.tvmaze.com/shows/6771';
     fetch(url1, {
       method: 'GET',
     })
