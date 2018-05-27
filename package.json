@@ -1,8 +1,6 @@
 {
   "name": "test_assignment_rtl_react",
   "version": "0.1.0",
-  "author": "Aliaksei Bychyk",
-  "homepage": "https:/aliakseibychyk.github.io/react-test-assignment",
   "private": true,
   "author": "Aliaksei Bychyk",
   "homepage": "https://aliakseibychyk.github.io/react-test-assignment",
@@ -22,7 +20,6 @@
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.8.2",
-    "gh-pages": "^1.1.0",
     "moment": "^2.22.1",
     "node-sass": "^4.9.0",
     "react": "^16.4.0",

@@ -5,11 +5,24 @@
   margin: auto;
 }
 
-.footer_container__title {
+.footer_container__info {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0 0 0 30px;
-  font-size: $font-size-s;
+  font-size: $font-size-xs;
   overflow: hidden;
+}
+
+
+@media (max-width: $screen-laptop) {
+  .footer_container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: $screen-tablet) and (orientation: portrait) {
+  .footer_container__info {
+    font-size: $font-size-xxs;
+  }
 }
