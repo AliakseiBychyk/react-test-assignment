@@ -29,3 +29,5 @@ Technology stack applied in the project:
 
 And I have used ES6+ JS as much as I can.
 
+In order to bring Responsive Web Design to my project I applied media queries.
+
