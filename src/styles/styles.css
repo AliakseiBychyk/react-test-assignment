@@ -98,6 +98,11 @@ body {
     .episode_container__homelink a:focus, .episode_container__homelink a:hover, .episode_container__homelink a:visited, .episode_container__homelink a:link, .episode_container__homelink a:active {
       text-decoration: blink; }
 
+@media (max-width: 960px) {
+  .episode_container {
+    width: 90%;
+    margin: auto; } }
+
 .header_container {
   display: flex;
   justify-content: space-between;

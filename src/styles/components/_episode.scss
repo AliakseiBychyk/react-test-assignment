@@ -23,13 +23,8 @@
 }
 
 @media (max-width: $screen-laptop) {
-
-}
-
-@media (max-width: $screen-tablet) {
-  
-}
-
-@media (max-width: $screen-mobile) {
-  
+  .episode_container {
+    width: 90%;
+    margin: auto;
+  }
 }

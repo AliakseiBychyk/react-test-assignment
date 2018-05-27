@@ -46,10 +46,6 @@
   padding: 0 30px;
 }
 
-@media (max-width: $screen-laptop) {
-
-}
-
 @media (max-width: $screen-tablet) {
   .episodeListItem_container__number {
     width: 20px;
@@ -59,8 +55,4 @@
     width: 100px;
     padding-right: 20px;
   }
-}
-
-@media (max-width: $screen-mobile) {
-  
 }
