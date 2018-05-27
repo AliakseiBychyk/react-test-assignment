@@ -6,7 +6,19 @@
 
 .show_container__list {
   font-size: $font-size-xs;
-  width: $list-width;
   margin: auto;
   padding: 50px 0 0;
+}
+
+@media (max-width: $screen-laptop) {
+  .show_container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: $screen-tablet) {
+  .show_container__list {
+    font-size: $font-size-xxs; 
+  }
 }

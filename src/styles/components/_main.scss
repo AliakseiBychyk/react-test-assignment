@@ -44,8 +44,32 @@
 .main_footer {
   background-color: $primary-dark;
   color: $primary-white;
-  padding: 20px;
-  text-align: center;
-  flex-direction: column;
-  margin: auto;
+  padding: 20px 0;
+}
+
+@media (max-width: $screen-laptop) {
+  .main_section__content {
+    width: auto;
+    margin: initial;
+  }
+}
+
+@media (max-width: $screen-tablet) and (orientation: portrait) {
+  .main_section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .main_section {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: $screen-mobile) and (orientation: portrait) {
+  .main_section {
+    padding: 20px 0;
+  }
 }
