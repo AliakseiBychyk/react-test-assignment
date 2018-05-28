@@ -1,31 +1,16 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import EpisodeListItem from '../../components/EpisondListItem/EpisodeListItem';
 import ShowDetails from '../../components/ShowDetails/ShowDetails';
 
 class Show extends Component {
-  state = {
-    show: {},
-    episodes: [],
-  }
-
   componentDidMount() {
-    const url1 = 'https://api.tvmaze.com/shows/6771';
-    fetch(url1, {
-      method: 'GET',
-    })
-      .then(res => res.json())
-      .then(show => this.setState(() => ({ show })));
-
-    const url2 = `${url1}/episodes`;
-    fetch(url2, {
-      method: 'GET',
-    })
-      .then(res => res.json())
-      .then(episodes => this.setState(() => ({ episodes })));
+    this.props.fetchShow()
+    this.props.fetchEpisodes()
   }
 
   render() {
-    const { episodes, show } = this.state;
+    const { episodes, show } = this.props;
 
     return (
       <div className="show_container">
@@ -44,5 +29,14 @@ class Show extends Component {
     );
   }
 }
+
+Show.propTypes = {
+  show: PropTypes.object,
+  episodes: PropTypes.arrayOf(PropTypes.object),
+  fetchShow: PropTypes.func,
+  fetchEpisodes: PropTypes.func
+}
+
+
 
 export default Show;

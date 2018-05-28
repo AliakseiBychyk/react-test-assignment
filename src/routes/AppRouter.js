@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Main from '../components/Main/Main';
-import Show from '../pages/Show/Show';
-import Episode from '../pages/Episode/Episode';
+import Show from '../pages/Show/ShowContainer';
+import Episode from '../pages/Episode/EpisodeContainer';
 
 const AppRouter = () => (
   <Main>
