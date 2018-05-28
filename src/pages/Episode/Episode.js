@@ -1,26 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import ShowDetails from '../../components/ShowDetails/ShowDetails';
 
 class Episode extends Component {
-  state = {
-    episode: {},
-  }
-
   componentDidMount() {
-    const url = 'https://api.tvmaze.com/shows/6771/episodes';
-
-    fetch(url, {
-      method: 'GET',
-    })
-      .then(res => res.json())
-      .then(episodes => episodes.find(episode =>
-        episode.id.toString() === this.props.match.params.episode))
-      .then(episode => this.setState(() => ({ episode })));
+    this.props.fetchEpisodes();
   }
 
   render() {
-    const { episode } = this.state;
+    const { episode } = this.props;
     return (
       <div className="episode_container">
         <div className="episode_container__homelink">
@@ -32,5 +21,9 @@ class Episode extends Component {
   }
 }
 
+Episode.propTypes = {
+  episode: PropTypes.object,
+  fetchEpisodes: PropTypes.func,
+}
 
 export default Episode;
