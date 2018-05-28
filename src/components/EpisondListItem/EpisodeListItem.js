@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import moment from 'moment';
 
 const EpisodeListItem = ({
-  id, number, name, airdate, season,
+  id, number, name, airdate, season, setEpisode,
 }) => {
   const style = number % 2 === 0 ? {} : { backgroundColor: '#E6E6E6' };
 
@@ -25,13 +25,13 @@ const EpisodeListItem = ({
       <li className="episodeListItem_container" style={style}>
 
         <div className="episodeListItem_container__number">
-          <Link to={`/${id}`}>{number}</Link>
+          <Link to={`/${id}`} onClick={setEpisode}>{number}</Link>
         </div>
         <div className="episodeListItem_container__airdate">
-          <Link to={`/${id}`}>{airdateFormatted}</Link>
+          <Link to={`/${id}`} onClick={setEpisode}>{airdateFormatted}</Link>
         </div>
         <div className="episodeListItem_container__name">
-          <Link to={`/${id}`}>{name}</Link>
+          <Link to={`/${id}`} onClick={setEpisode}>{name}</Link>
         </div>
 
       </li>

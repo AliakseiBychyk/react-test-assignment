@@ -4,9 +4,19 @@ import EpisodeListItem from '../../components/EpisondListItem/EpisodeListItem';
 import ShowDetails from '../../components/ShowDetails/ShowDetails';
 
 class Show extends Component {
+  static defaultProps = {
+    episode: {},
+  }
+
   componentDidMount() {
     this.props.fetchShow();
     this.props.fetchEpisodes();
+  }
+
+  setEpisode = (id) => {
+    const choosedepisode = this.props.episodes.find(episode =>
+      episode.id === id);
+    this.props.setEpisode(choosedepisode);
   }
 
   render() {
@@ -21,6 +31,7 @@ class Show extends Component {
           {episodes.map((episode, i) => (
             <EpisodeListItem
               key={episode.id}
+              setEpisode={() => this.setEpisode(episode.id)}
               {...episode}
             />
           ))}
@@ -33,9 +44,9 @@ class Show extends Component {
 Show.propTypes = {
   show: PropTypes.object.isRequired,
   episodes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  episode: PropTypes.object,
   fetchShow: PropTypes.func.isRequired,
   fetchEpisodes: PropTypes.func.isRequired,
 };
-
 
 export default Show;
