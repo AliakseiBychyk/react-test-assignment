@@ -5,8 +5,8 @@ import ShowDetails from '../../components/ShowDetails/ShowDetails';
 
 class Show extends Component {
   componentDidMount() {
-    this.props.fetchShow()
-    this.props.fetchEpisodes()
+    this.props.fetchShow();
+    this.props.fetchEpisodes();
   }
 
   render() {
@@ -31,12 +31,11 @@ class Show extends Component {
 }
 
 Show.propTypes = {
-  show: PropTypes.object,
-  episodes: PropTypes.arrayOf(PropTypes.object),
-  fetchShow: PropTypes.func,
-  fetchEpisodes: PropTypes.func
-}
-
+  show: PropTypes.object.isRequired,
+  episodes: PropTypes.arrayOf(PropTypes.object).isRequired,
+  fetchShow: PropTypes.func.isRequired,
+  fetchEpisodes: PropTypes.func.isRequired,
+};
 
 
 export default Show;

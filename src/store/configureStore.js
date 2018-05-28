@@ -6,20 +6,18 @@ import rootSaga from '../actions/sagas';
 
 const composeEnhancers = typeof window === 'object'
   ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
-  : compose
-  
+  : compose;
+
 const sagaMiddleware = createSagaMiddleware();
 
 export default () => {
   const store = createStore(
     combineReducers({
       show: showReducer,
-      episodes: episodesReducer
+      episodes: episodesReducer,
     }),
-    composeEnhancers(
-      applyMiddleware(sagaMiddleware)
-    )
-  )
+    composeEnhancers(applyMiddleware(sagaMiddleware)),
+  );
   sagaMiddleware.run(rootSaga);
 
   return store;

@@ -22,8 +22,8 @@ class Episode extends Component {
 }
 
 Episode.propTypes = {
-  episode: PropTypes.object,
-  fetchEpisodes: PropTypes.func,
-}
+  episode: PropTypes.object.isRequired,
+  fetchEpisodes: PropTypes.func.isRequired,
+};
 
 export default Episode;

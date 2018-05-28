@@ -5,10 +5,10 @@ import Episode from './Episode';
 const mapStateToProps = (state, props) => ({
   episode: state.episodes.find(episode => (
     episode.id.toString() === props.match.params.episode
-  ))
+  )),
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   fetchEpisodes: () => dispatch(fetchEpisodes()),
 });
 
