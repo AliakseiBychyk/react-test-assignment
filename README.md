@@ -26,6 +26,8 @@ Technology stack applied in the project:
 - React Router
 - ESlint
 - SASS
+- Redux - store manager
+- Redux-saga - tool for asynchronous actions
 
 And I have used ES6+ JS as much as I can.
 
