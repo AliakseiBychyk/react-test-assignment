@@ -19,6 +19,7 @@ npm start
 
 The App will run on `http://localhost:3000`.
 
+Additionally the application is deployed on Heroku cloud https://react-powerpuff-girls.herokuapp.com/
 
 Technology stack applied in the project:
 - React.js
